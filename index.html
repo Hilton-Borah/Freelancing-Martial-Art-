@@ -13,19 +13,21 @@
                     colors: {
                         clifford: '#da373d',
                         primaryBG: '#22d172',
-                        black: 'black'
+                        black: 'black',
+                        backgroundgray:'rgb(10, 10, 10)'
                     },
                     spacing: {
                         '128': '64rem',
                         'imageweight':'40%',
-                        '95%':'95%'
+                        'secondpart':'85%',
+                        'crousel':'80%'
                     },
                     height:{
-                        'imageheight':'100px'
+                        // 'imageheight':'300px'
                     },
                     margin: {
                         '5px': '5px',
-                        '500px':'500px'
+                        '400px':'400px'
                     }
                 }
             }
@@ -37,7 +39,8 @@
     /* CSS for NavBar */
     #NavBar {
         overflow: hidden;
-        /* color: rgb(44, 226, 50); */
+        /* position: absolute; */
+        /* color: rgb(10, 10, 10); */
     }
 
     /* CSS for NavBar Anchor Tag i.e. Links  */
@@ -66,7 +69,8 @@
         /*Text color on top of the background image*/
         padding: 330px 0;
         /* Adjust the padding as needed */
-        margin-bottom: -250px;
+        margin-bottom: -200px;
+        
     }
 
     /* Style for the overlaying content */
@@ -89,7 +93,7 @@
     <!-- navbar section------------ -->
 
 
-    <nav class="w-full bg-white border-gray-200 dark:bg-gray-900 sticky" id="Navbar">
+    <nav class="w-full bg-white border-gray-200 dark:bg-gray-900 fixed z-10" id="Navbar">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center">
                 <img src="./Images/logo.png" class="h-8 mr-3" alt="Flowbite Logo" />
@@ -114,7 +118,7 @@
                             aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#secondpart"
                             class="block py-2 pl-3 pr-4 text-primaryBG rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
                     </li>
                     <li>
@@ -142,17 +146,17 @@
     </div> -->
 
     <section class="background-section">
-        <div class="overlay-content flex justify-between items-center">
+        <div class="overlay-content flex justify-between items-center mt-12">
             <div class="p-10 w-3/5">
                 <p class="text-3xl font-bold mb-5 text-primaryBG">Lorem ipsum dolor sit amet.</p>
                 <p class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt quidem dicta quos
                     ex totam, nisi ea rerum a! Qui quas quaerat deleniti quod, dolore voluptate et inventore sit velit
                     fuga earum dolores laborum provident obcaecati ipsa hic fugit ad autem optio vel harum tempore, iste
                     id voluptatibus! Magnam, sint autem.</p>
-                <button class="bg-primaryBG p-2 pr-7 pl-7 rounded-xl text-black font-semibold mt-8">Call us</button>
+                <button class="bg-primaryBG p-2 pr-7 pl-7 rounded-xl text-black font-semibold mt-8 hover:bg-white">Call us</button>
             </div>
             <div>
-                <img src="./Images/three.png" alt="">
+                <img class="p-10" src="./Images/three.png" alt="">
             </div>
         </div>
     </section>
@@ -163,15 +167,82 @@
     </svg>
 
 
+    <!-- second body ------------------------- -->
 
-    <div class="text-white w-[95%] mt-[500px] m-auto border p-10" >
-        <img class="w-imagewight h-imageheight" src="http://www.moyerskarate.com/images/moyers/master_moyer_wall.jpg" alt="">
+
+    <div id="secondpart" class="text-white w-secondpart mt-[400px] flex justify-between items-center m-auto p-10 gap-24" >
+        <img class="w-imageweight h-imageheight rounded-xl" src="http://www.moyerskarate.com/images/moyers/master_moyer_wall.jpg" alt="">
         <div>
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa magni sed omnis beatae ipsa? Ducimus qui
-                perferendis itaque velit aliquid.</p>
+            <p  class="text-3xl font-bold mb-5">Who will be your <span class="text-primaryBG">INSTRUCTOR</span></p>
+            <p class="text-2xl font-semibold mb-5">A skilled teacher offering top-notch guidance.</p>
+            <p class="text-xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo magni explicabo quis maxime praesentium perferendis neque dolorem deleniti impedit at officia omnis est sequi eum, ut voluptate velit sint, sit sed laudantium. Eos, sequi! Inventore rerum nam minima ipsa facilis, eaque hic voluptatibus. Sunt debitis dolorum est repellendus quidem tempore unde qui assumenda beatae? Ipsam nam mollitia ducimus tempore maiores obcaecati, ad consequatur voluptate doloribus alias, odio deserunt molestiae similique.</p>
         </div>
     </div>
+
+
+    <div class="m-auto text-white text-center mt-24 leading-loose bg-backgroundgray p-10">
+        <p class="text-3xl font-bold"><span class="text-primaryBG">FREE CLASSES</span> FOR THE FIRST MONTH</p>
+        <p class="text-2xl font-semibold mt-3">Limited time only. Join before its too late.</p>
+        <hr class="w-1/4 m-auto mt-2 mb-1">
+        <p class="text-xl mt-3">Call Today: <span class="text-primaryBG">+123-456-7890</span></p>
+    </div>
+
+
+<!-- third body ------------------------ -->
+    
+
+<div id="default-carousel" class="relative w-crousel m-auto mt-24" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://www.verywellfamily.com/thmb/M2I1_OXNk1aS4fHvMS17OT4yXjc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-91947864-584826485f9b5851e5b39270.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://cdn.pixabay.com/photo/2014/06/05/21/22/aikido-362954_1280.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://static.wixstatic.com/media/38d245_13cfd075c1ea4cd3926f0496812bfd12~mv2.jpg/v1/fill/w_1242,h_789,al_c/38d245_13cfd075c1ea4cd3926f0496812bfd12~mv2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://img.freepik.com/premium-photo/four-karate-fighters-poses-white-kimono-group-training-karatekas-workout-martial-arts_266732-21075.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://media.11alive.com/assets/WXIA/images/90dc0c94-01ea-4bbc-96d6-684b1a98afec/90dc0c94-01ea-4bbc-96d6-684b1a98afec_1920x1080.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+
 
 
 
@@ -187,7 +258,8 @@
     function stickynavbar() {
         if (window.scrollY >= top) {
             navbar.classList.add('sticky');
-        } else {
+        } 
+        else {
             navbar.classList.remove('sticky');
         }
     }
