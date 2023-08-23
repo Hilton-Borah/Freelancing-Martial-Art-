@@ -19,9 +19,11 @@
         rel="stylesheet">
 
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Labrada&family=Merriweather&family=Open+Sans&family=Phudu:wght@300&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Labrada&family=Merriweather&family=Open+Sans&family=Phudu:wght@300&family=Roboto+Mono:wght@200&display=swap"
+        rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -36,7 +38,7 @@
                     spacing: {
                         '128': '64rem',
                         'imageweight': '40%',
-                        'secondpart': '85%',
+                        'secondpartwidth': '85%',
                         'crousel': '80%',
                         'nav': '95%'
                     },
@@ -46,7 +48,7 @@
                     margin: {
                         '5px': '5px',
                         '400px': '400px',
-                        'minus':'-60px'
+                        'minus': '-60px'
                     }
                 }
             }
@@ -60,23 +62,30 @@
         font-family: 'Open Sans', sans-serif;
     }
 
-    .bodyBlack{
+    .bodyBlack {
         background-color: black;
     }
-    
-    .bodyWhite{
+
+    .bodyWhite {
         background-color: white;
-        color:white
-    }
-    
-    .textBlack{
-        color:black
+        color: white
     }
 
-    .textWhite{
-        color:white
+    .textBlack {
+        color: black
     }
 
+    .textWhite {
+        color: white
+    }
+
+    .middleBlack {
+        background-color: rgb(10, 10, 10);
+    }
+
+    .middleWhite {
+        background-color: rgb(241, 241, 241);
+    }
 
     #NavBar {
         overflow: hidden;
@@ -103,7 +112,7 @@
 
     .background-section {
         position: relative;
-        background-image: url('./Images/karate-theme-wh7.jpg');
+        background-image: url('./Images/manone.jpg');
         background-size: cover;
         background-position: center;
         color: white;
@@ -141,12 +150,11 @@
         /* box-shadow: rgba(34,209,114) 0px 0px 0px 1px; */
     }
 
-    .logotext{
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    .logotext {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         color: #cbb26a;
         margin-top: -30px;
     }
-
 </style>
 
 <body>
@@ -159,8 +167,8 @@
             <div class="flex justify-between items-center h-8 mt-3">
 
                 <img src="./Images/logo (1).png" class="w-48" alt="Flowbite Logo" />
-        <p class="logotext text-sm ml-minus">FULL CIRCLE MARTIAL ART OF READING</p>
-                
+                <p class="logotext text-sm ml-minus">FULL CIRCLE MARTIAL ART OF READING</p>
+
             </div>
             <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
             <!-- </a> -->
@@ -216,18 +224,20 @@
     </div> -->
 
     <section class="background-section">
-        <div class="overlay-content flex justify-between items-center mt-12">
-            <div class="p-10 w-3/5">
+        <div class="overlay-content w-3/4 mt-12">
+            <div class="p-10 text-center">
                 <p class="text-3xl font-bold mb-5 text-primaryBG">FULL CIRCLE MARTIAL ART OF READING</p>
-                <p class="text-xl">Discover your inner strength with our martial art school. Learn self-defense, build confidence, and achieve balance in a supportive community. Unleash your potential with expert guidance and exciting classes. Join us to embark on a transformative journey today!</p>
+                <p class="text-xl">Discover your inner strength with our martial art school. Learn self-defense, build
+                    confidence, and achieve balance in a supportive community. Unleash your potential with expert
+                    guidance and exciting classes. Join us to embark on a transformative journey today!</p>
 
                 <button
                     class="bg-primaryBG p-2 pr-7 pl-7 rounded-xl text-black font-semibold mt-8 hover:bg-white  gap-5"><i
                         class="fa-sharp fa-solid fa-phone mr-3"></i>Contact us</button>
             </div>
-            <div>
-                <img class="p-10" src="./Images/three.png" alt="">
-            </div>
+            <!-- <div>
+                <img  class="p-10 w-full" src="./Images/man-standing-wearing-white-karate-gi.png" alt="">
+            </div> -->
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" class="absolute mt-24" viewBox="0 0 1440 320">
             <path fill="#22d172" fill-opacity="1"
@@ -256,7 +266,7 @@
     <!-- second body ------------------------- -->
 
 
-    <div id="secondpart" class="w-secondpart mt-48 flex justify-between items-center m-auto p-10 gap-24">
+    <div id="secondpart" class="w-secondpartwidth mt-48 flex justify-between items-center m-auto p-10 gap-24">
         <img class="w-imageweight h-imageheight rounded-xl"
             src="http://www.moyerskarate.com/images/moyers/master_moyer_wall.jpg" alt="">
         <div>
@@ -274,7 +284,7 @@
 
     <!-- third part -->
 
-    <div id="thirdpart" class="m-auto text-center mt-24 leading-loose bg-backgroundgray p-10">
+    <div id="thirdpart" class="m-auto middleWhite text-center mt-24 leading-loose p-10">
         <p class="text-3xl font-bold"><span class="text-primaryBG">FREE CLASSES</span> FOR THE FIRST MONTH</p>
         <p class="text-2xl font-semibold mt-3">Limited time only. Join before its too late.</p>
         <hr class="w-1/4 m-auto mt-5 mb-1 border-2 border-primaryBG">
@@ -358,41 +368,45 @@
 
     <!-- fifth part payment--------------------------- -->
 
-    <div class="m-auto text-white text-center mt-24 leading-loose bg-backgroundgray p-10">
+    <div id="fifthpart" class="m-auto text-center middleWhite mt-24 leading-loose p-10">
         <p class="text-3xl font-bold">KARATE <span class="text-primaryBG">PACKAGES</span></p>
         <p class="text-2xl font-semibold mt-3">Choose a pricing plan that fits for you.</p>
         <hr class="w-1/4 m-auto mt-5 mb-1 border-2 border-primaryBG">
     </div>
     <div class="flex md-grid justify-between items-center text-white text-xl w-1/2 m-auto mt-24 leading-5 mb-24">
-        <div class="pricebox text-center bg-backgroundgray  rounded-xl p-10 leading-loose">
+        <div id="firstprice" class="pricebox middleWhite text-center textBlack  rounded-xl p-10 leading-loose">
             <p class="text-2xl font-bold text-primaryBG text-primaryBG">Single person</p>
-        <hr class="w-3/4 m-auto mt-5 mb-1 border-2 border-primaryBG">
-            <p class="font-semibold mt-5 text-5xl mb-5">$ 100</p>
-            <p>Monthly Payment</p>
-            <p>Weekly Training Classes</p>
-            <p>Training Seminars</p>
-            <p>Periodic Guest Instructors</p>
+            <hr class="w-3/4 m-auto mt-5 mb-1 border-2 border-primaryBG">
+            <div id="firstpricep">
+                <p class="font-semibold mt-5 text-5xl mb-5">$ 100</p>
+                <p>Monthly Payment</p>
+                <p>Weekly Training Classes</p>
+                <p>Training Seminars</p>
+                <p>Periodic Guest Instructors</p>
+            </div>
         </div>
-        <div class="pricebox text-center bg-backgroundgray rounded-xl p-10 leading-loose">
+        <div id="secondprice" class="pricebox middleWhite text-center textBlack rounded-xl p-10 leading-loose">
             <p class="text-2xl font-bold text-primaryBG">Family person</p>
-        <hr class="w-3/4 m-auto mt-5 mb-1 border-2 border-primaryBG">
-            <p class="font-semibold mt-5 text-5xl mb-5">$ 80</p>
-            <p>First Member Pays Full Price</p>
-            <p>Each Additional Pays</p>
-            <p>$60/monthly</p>
-            <p>Living Under Same Roof</p>
+            <hr class="w-3/4 m-auto mt-5 mb-1 border-2 border-primaryBG">
+            <div id="secondpricep">
+                <p class="font-semibold mt-5 text-5xl mb-5">$ 80</p>
+                <p>First Member Pays Full Price</p>
+                <p>Each Additional Pays</p>
+                <p>$60/monthly</p>
+                <p>Living Under Same Roof</p>
+            </div>
         </div>
     </div>
-    <!-- shadow-xl hover:shadow-primaryBG -->
+    <!-- shadow-xl hover:shadow-primaryBG  skillllll-->
 
-    <div class="m-auto text-white text-center mt-24 leading-loose bg-backgroundgray p-10">
+    <div id="skillpart" class="m-auto text-center middleWhite mt-24 leading-loose p-10">
         <p class="text-3xl font-bold">OUR <span class="text-primaryBG">AREAS OF FOCUS</span></p>
         <p class="text-2xl font-semibold mt-3">Here are some of the skills we focus on.</p>
         <hr class="w-1/4 m-auto mt-5 mb-1 border-2 border-primaryBG">
     </div>
 
     <div class="w-10/12 flex justify-between items-center m-auto text-white gap-5 mt-24">
-        <div class="w-3/12 pricebox text-center bg-backgroundgray rounded-xl leading-loose">
+        <div class="w-3/12 pricebox text-center middleWhite leading-loose">
             <img class="rounded-t-xl w-full" src="http://www.moyerskarate.com/images/moyers/mm_self-defense.jpg" alt="">
             <div class="p-5">
                 <p class="font-bold text-xl mb-3 text-primaryBG">SELF-DEFENCE</p>
@@ -400,7 +414,7 @@
                 <p>Physical and mental preparedness for those unprovoked and unpredicatable altercations.</p>
             </div>
         </div>
-        <div class="w-3/12 pricebox text-center bg-backgroundgray rounded-xl leading-loose">
+        <div class="w-3/12 pricebox text-center middleWhite rounded-xl leading-loose">
             <img class="rounded-t-xl w-full" src="http://www.moyerskarate.com/images/moyers/mm_weapons.jpg" alt="">
             <div class="p-5">
                 <p class="font-bold text-xl mb-3 text-primaryBG">TRADITIONAL WEAPON</p>
@@ -408,7 +422,7 @@
                 <p>Experience some of the culture and history of martial arts through weapons training.</p>
             </div>
         </div>
-        <div class="w-3/12 pricebox text-center bg-backgroundgray rounded-xl leading-loose">
+        <div class="w-3/12 pricebox text-center middleWhite leading-loose">
             <img class="rounded-t-xl w-full" src="http://www.moyerskarate.com/images/moyers/mm_kata.jpg" alt="">
             <div class="p-5">
                 <p class="font-bold text-xl mb-3 text-primaryBG">KATA or FORMS</p>
@@ -416,7 +430,7 @@
                 <p>PKatas/Forms are the training tools needed to improve your physical martial arts skills.</p>
             </div>
         </div>
-        <div class="w-3/12 pricebox text-center bg-backgroundgray rounded-xl leading-loose">
+        <div class="w-3/12 pricebox text-center middleWhite leading-loose">
             <img class="rounded-t-xl w-full" src="http://www.moyerskarate.com/images/moyers/mm_fight.jpg" alt="">
             <div class="p-5">
                 <p class="font-bold text-xl mb-3 text-primaryBG">FIGHTING</p>
@@ -430,7 +444,10 @@
     <!-- google map------------------------------ -->
 
     <div class="w-8/12 m-auto mt-24">
-        <iframe class="w-full rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.0303671364136!2d-75.93803472441405!3d40.386019571444606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c677af9b36454b%3A0xfbd29542d6c71eef!2s102%20Cleveland%20Ave%2C%20Reading%2C%20PA%2019605%2C%20USA!5e0!3m2!1sen!2sin!4v1692815560839!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="w-full rounded-xl"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.0303671364136!2d-75.93803472441405!3d40.386019571444606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c677af9b36454b%3A0xfbd29542d6c71eef!2s102%20Cleveland%20Ave%2C%20Reading%2C%20PA%2019605%2C%20USA!5e0!3m2!1sen!2sin!4v1692815560839!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <!-- Accortion FAQ------------------------ -->
