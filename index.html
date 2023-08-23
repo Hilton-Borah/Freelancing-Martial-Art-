@@ -60,6 +60,24 @@
         font-family: 'Open Sans', sans-serif;
     }
 
+    .bodyBlack{
+        background-color: black;
+    }
+    
+    .bodyWhite{
+        background-color: white;
+        color:white
+    }
+    
+    .textBlack{
+        color:black
+    }
+
+    .textWhite{
+        color:white
+    }
+
+
     #NavBar {
         overflow: hidden;
         /* position: absolute; */
@@ -85,7 +103,7 @@
 
     .background-section {
         position: relative;
-        background-image: url('Images/background image.jpg');
+        background-image: url('./Images/karate-theme-wh7.jpg');
         background-size: cover;
         background-position: center;
         color: white;
@@ -131,7 +149,7 @@
 
 </style>
 
-<body class="bg-black">
+<body>
     <!-- navbar section------------ -->
 
 
@@ -179,6 +197,11 @@
                     <li>
                         <a href="#"
                             class="block py-2 pl-3 pr-4 text-primaryBG rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primaryBG md:p-0 dark:text-white md:dark:hover:text-primaryBG dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    </li>
+                    <li id="theme">
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-primaryBG bg-text-primaryBG rounded md:bg-transparent md:text-primaryBG md:p-0 dark:text-white md:dark:text-primaryBG"
+                            aria-current="page">Theme</a>
                     </li>
                 </ul>
             </div>
@@ -233,7 +256,7 @@
     <!-- second body ------------------------- -->
 
 
-    <div id="secondpart" class="text-white w-secondpart mt-48 flex justify-between items-center m-auto p-10 gap-24">
+    <div id="secondpart" class="w-secondpart mt-48 flex justify-between items-center m-auto p-10 gap-24">
         <img class="w-imageweight h-imageheight rounded-xl"
             src="http://www.moyerskarate.com/images/moyers/master_moyer_wall.jpg" alt="">
         <div>
@@ -251,10 +274,10 @@
 
     <!-- third part -->
 
-    <div class="m-auto text-white text-center mt-24 leading-loose bg-backgroundgray p-10">
+    <div id="thirdpart" class="m-auto text-center mt-24 leading-loose bg-backgroundgray p-10">
         <p class="text-3xl font-bold"><span class="text-primaryBG">FREE CLASSES</span> FOR THE FIRST MONTH</p>
         <p class="text-2xl font-semibold mt-3">Limited time only. Join before its too late.</p>
-        <hr class="w-1/4 m-auto mt-5 mb-1">
+        <hr class="w-1/4 m-auto mt-5 mb-1 border-2 border-primaryBG">
         <p class="text-xl mt-3">Call Today: <span class="text-primaryBG font-bold">+610-568-2961</span></p>
     </div>
 
@@ -338,11 +361,12 @@
     <div class="m-auto text-white text-center mt-24 leading-loose bg-backgroundgray p-10">
         <p class="text-3xl font-bold">KARATE <span class="text-primaryBG">PACKAGES</span></p>
         <p class="text-2xl font-semibold mt-3">Choose a pricing plan that fits for you.</p>
-        <hr class="w-1/4 m-auto mt-5 mb-1">
+        <hr class="w-1/4 m-auto mt-5 mb-1 border-2 border-primaryBG">
     </div>
     <div class="flex md-grid justify-between items-center text-white text-xl w-1/2 m-auto mt-24 leading-5 mb-24">
         <div class="pricebox text-center bg-backgroundgray  rounded-xl p-10 leading-loose">
-            <p class="text-2xl font-bold text-primaryBG">Single person</p>
+            <p class="text-2xl font-bold text-primaryBG text-primaryBG">Single person</p>
+        <hr class="w-3/4 m-auto mt-5 mb-1 border-2 border-primaryBG">
             <p class="font-semibold mt-5 text-5xl mb-5">$ 100</p>
             <p>Monthly Payment</p>
             <p>Weekly Training Classes</p>
@@ -351,6 +375,7 @@
         </div>
         <div class="pricebox text-center bg-backgroundgray rounded-xl p-10 leading-loose">
             <p class="text-2xl font-bold text-primaryBG">Family person</p>
+        <hr class="w-3/4 m-auto mt-5 mb-1 border-2 border-primaryBG">
             <p class="font-semibold mt-5 text-5xl mb-5">$ 80</p>
             <p>First Member Pays Full Price</p>
             <p>Each Additional Pays</p>
@@ -363,7 +388,7 @@
     <div class="m-auto text-white text-center mt-24 leading-loose bg-backgroundgray p-10">
         <p class="text-3xl font-bold">OUR <span class="text-primaryBG">AREAS OF FOCUS</span></p>
         <p class="text-2xl font-semibold mt-3">Here are some of the skills we focus on.</p>
-        <hr class="w-1/4 m-auto mt-5 mb-1">
+        <hr class="w-1/4 m-auto mt-5 mb-1 border-2 border-primaryBG">
     </div>
 
     <div class="w-10/12 flex justify-between items-center m-auto text-white gap-5 mt-24">
@@ -402,12 +427,18 @@
         </div>
     </div>
 
-    <!-- Accortion------------------------ -->
+    <!-- google map------------------------------ -->
+
+    <div class="w-8/12 m-auto mt-24">
+        <iframe class="w-full rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.0303671364136!2d-75.93803472441405!3d40.386019571444606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c677af9b36454b%3A0xfbd29542d6c71eef!2s102%20Cleveland%20Ave%2C%20Reading%2C%20PA%2019605%2C%20USA!5e0!3m2!1sen!2sin!4v1692815560839!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Accortion FAQ------------------------ -->
 
     <div class="m-auto text-white text-center mt-24 leading-loose bg-backgroundgray p-10">
         <p class="text-3xl font-bold">LET'S KNOW</p>
         <p class="text-2xl font-semibold mt-3"><span class="text-primaryBG">FREQUENTY ASK QUESTION</span></p>
-        <hr class="w-1/4 m-auto mt-5 mb-1">
+        <hr class="w-1/4 m-auto mt-5 mb-1 border-2 border-primaryBG">
     </div>
 
     <div class="w-10/12 flex justify-between items-center m-auto gap-10 mt-24">
@@ -594,17 +625,4 @@
 
 </html>
 
-<script>
-
-    const navbar = document.querySelector('#NavBar');
-    let top = navbar.offsetTop;
-    function stickynavbar() {
-        if (window.scrollY >= top) {
-            navbar.classList.add('sticky');
-        }
-        else {
-            navbar.classList.remove('sticky');
-        }
-    }
-    window.addEventListener('scroll', stickynavbar);
-</script>
+<script src="./index.js"></script>
