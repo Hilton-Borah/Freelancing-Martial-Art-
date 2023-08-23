@@ -17,6 +17,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Labrada&family=Merriweather&family=Open+Sans&family=Roboto+Mono:wght@200&display=swap"
         rel="stylesheet">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Labrada&family=Merriweather&family=Open+Sans&family=Phudu:wght@300&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -25,7 +30,8 @@
                         clifford: '#da373d',
                         primaryBG: 'rgb(34,209,114)',
                         black: 'black',
-                        backgroundgray: 'rgb(10, 10, 10)'
+                        backgroundgray: 'rgb(10, 10, 10)',
+                        // logocolor:'#cbb26a'
                     },
                     spacing: {
                         '128': '64rem',
@@ -35,11 +41,12 @@
                         'nav': '95%'
                     },
                     height: {
-                        // 'imageheight':'300px'
+                        'footer': '200px'
                     },
                     margin: {
                         '5px': '5px',
-                        '400px': '400px'
+                        '400px': '400px',
+                        'minus':'-60px'
                     }
                 }
             }
@@ -115,6 +122,13 @@
         box-shadow: rgba(34, 209, 114) 0px 1px 2px 0px, rgba(34, 209, 114) 0px 2px 6px 2px;
         /* box-shadow: rgba(34,209,114) 0px 0px 0px 1px; */
     }
+
+    .logotext{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #cbb26a;
+        margin-top: -30px;
+    }
+
 </style>
 
 <body class="bg-black">
@@ -124,10 +138,11 @@
     <nav class="w-full bg-white text-primaryBG border-gray-200 dark:bg-gray-900 fixed z-10" id="Navbar">
         <div class="max-w-screen-xl w-nav flex flex-wrap items-center justify-between mx-auto p-4">
             <!-- <a href="#"> -->
-            <div class="flex items-center h-8 mr-3">
+            <div class="flex justify-between items-center h-8 mt-3">
 
-                <img src="./Images/logo (1).png" class="w-36 mt-3" alt="Flowbite Logo" />
-                <p>FULL CIRCLE MARTIAL ART OF READING</p>
+                <img src="./Images/logo (1).png" class="w-48" alt="Flowbite Logo" />
+        <p class="logotext text-sm ml-minus">FULL CIRCLE MARTIAL ART OF READING</p>
+                
             </div>
             <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
             <!-- </a> -->
@@ -155,11 +170,11 @@
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 pl-3 pr-4 text-primaryBG rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primaryBG md:p-0 dark:text-white md:dark:hover:text-primaryBG dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                            class="block py-2 pl-3 pr-4 text-primaryBG rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primaryBG md:p-0 dark:text-white md:dark:hover:text-primaryBG dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
                     </li>
                     <li>
                         <a href="#"
-                            class="block py-2 pl-3 pr-4 text-primaryBG rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primaryBG md:p-0 dark:text-white md:dark:hover:text-primaryBG dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                            class="block py-2 pl-3 pr-4 text-primaryBG rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primaryBG md:p-0 dark:text-white md:dark:hover:text-primaryBG dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">FAQ</a>
                     </li>
                     <li>
                         <a href="#"
@@ -180,11 +195,8 @@
     <section class="background-section">
         <div class="overlay-content flex justify-between items-center mt-12">
             <div class="p-10 w-3/5">
-                <p class="text-3xl font-bold mb-5 text-primaryBG">Lorem ipsum dolor sit amet.</p>
-                <p class="text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt quidem dicta quos
-                    ex totam, nisi ea rerum a! Qui quas quaerat deleniti quod, dolore voluptate et inventore sit velit
-                    fuga earum dolores laborum provident obcaecati ipsa hic fugit ad autem optio vel harum tempore, iste
-                    id voluptatibus! Magnam, sint autem.</p>
+                <p class="text-3xl font-bold mb-5 text-primaryBG">FULL CIRCLE MARTIAL ART OF READING</p>
+                <p class="text-xl">Discover your inner strength with our martial art school. Learn self-defense, build confidence, and achieve balance in a supportive community. Unleash your potential with expert guidance and exciting classes. Join us to embark on a transformative journey today!</p>
 
                 <button
                     class="bg-primaryBG p-2 pr-7 pl-7 rounded-xl text-black font-semibold mt-8 hover:bg-white  gap-5"><i
@@ -200,7 +212,8 @@
             </path>
         </svg>
     </section>
-    <div class="w-full absolute bg-primaryBG flex justify-evenly items-center m-auto text-center text-black font-semibold">
+    <div
+        class="w-full absolute bg-primaryBG flex justify-evenly items-center m-auto text-center text-black font-semibold">
         <div class=" flex justify-between items-center gap-7">
             <i class="fa-solid fa-calendar-days text-3xl"></i>
             <div class="text-xl">
@@ -220,8 +233,7 @@
     <!-- second body ------------------------- -->
 
 
-    <div id="secondpart"
-        class="text-white w-secondpart mt-48 flex justify-between items-center m-auto p-10 gap-24">
+    <div id="secondpart" class="text-white w-secondpart mt-48 flex justify-between items-center m-auto p-10 gap-24">
         <img class="w-imageweight h-imageheight rounded-xl"
             src="http://www.moyerskarate.com/images/moyers/master_moyer_wall.jpg" alt="">
         <div>
@@ -243,7 +255,7 @@
         <p class="text-3xl font-bold"><span class="text-primaryBG">FREE CLASSES</span> FOR THE FIRST MONTH</p>
         <p class="text-2xl font-semibold mt-3">Limited time only. Join before its too late.</p>
         <hr class="w-1/4 m-auto mt-5 mb-1">
-        <p class="text-xl mt-3">Call Today: <span class="text-primaryBG font-bold">+123-456-7890</span></p>
+        <p class="text-xl mt-3">Call Today: <span class="text-primaryBG font-bold">+610-568-2961</span></p>
     </div>
 
 
@@ -254,30 +266,30 @@
         <!-- Carousel wrapper -->
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
             <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="hidden duration-50 ease-in-out" data-carousel-item>
                 <img src="https://www.verywellfamily.com/thmb/M2I1_OXNk1aS4fHvMS17OT4yXjc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-91947864-584826485f9b5851e5b39270.jpg"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://cdn.pixabay.com/photo/2014/06/05/21/22/aikido-362954_1280.jpg"
+            <div class="hidden duration-50 ease-in-out" data-carousel-item>
+                <img src="https://www.verywellfamily.com/thmb/M2I1_OXNk1aS4fHvMS17OT4yXjc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-91947864-584826485f9b5851e5b39270.jpg"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             </div>
             <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="https://static.wixstatic.com/media/38d245_13cfd075c1ea4cd3926f0496812bfd12~mv2.jpg/v1/fill/w_1242,h_789,al_c/38d245_13cfd075c1ea4cd3926f0496812bfd12~mv2.jpg"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
+            </div> -->
             <!-- Item 4 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="https://img.freepik.com/premium-photo/four-karate-fighters-poses-white-kimono-group-training-karatekas-workout-martial-arts_266732-21075.jpg"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
+            </div> -->
             <!-- Item 5 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
                 <img src="https://media.11alive.com/assets/WXIA/images/90dc0c94-01ea-4bbc-96d6-684b1a98afec/90dc0c94-01ea-4bbc-96d6-684b1a98afec_1920x1080.jpg"
                     class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
+            </div> -->
         </div>
         <!-- Slider indicators -->
         <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
@@ -331,7 +343,7 @@
     <div class="flex md-grid justify-between items-center text-white text-xl w-1/2 m-auto mt-24 leading-5 mb-24">
         <div class="pricebox text-center bg-backgroundgray  rounded-xl p-10 leading-loose">
             <p class="text-2xl font-bold text-primaryBG">Single person</p>
-            <p class="font-semibold mt-5 text-4xl mb-5">$ 123</p>
+            <p class="font-semibold mt-5 text-5xl mb-5">$ 100</p>
             <p>Monthly Payment</p>
             <p>Weekly Training Classes</p>
             <p>Training Seminars</p>
@@ -339,11 +351,11 @@
         </div>
         <div class="pricebox text-center bg-backgroundgray rounded-xl p-10 leading-loose">
             <p class="text-2xl font-bold text-primaryBG">Family person</p>
-            <p class="font-semibold mt-5 text-4xl mb-5">$ 80</p>
-            <p>Monthly Payment</p>
-            <p>Weekly Training Classes</p>
-            <p>Training Seminars</p>
-            <p>Periodic Guest Instructors</p>
+            <p class="font-semibold mt-5 text-5xl mb-5">$ 80</p>
+            <p>First Member Pays Full Price</p>
+            <p>Each Additional Pays</p>
+            <p>$60/monthly</p>
+            <p>Living Under Same Roof</p>
         </div>
     </div>
     <!-- shadow-xl hover:shadow-primaryBG -->
@@ -390,7 +402,193 @@
         </div>
     </div>
 
+    <!-- Accortion------------------------ -->
 
+    <div class="m-auto text-white text-center mt-24 leading-loose bg-backgroundgray p-10">
+        <p class="text-3xl font-bold">LET'S KNOW</p>
+        <p class="text-2xl font-semibold mt-3"><span class="text-primaryBG">FREQUENTY ASK QUESTION</span></p>
+        <hr class="w-1/4 m-auto mt-5 mb-1">
+    </div>
+
+    <div class="w-10/12 flex justify-between items-center m-auto gap-10 mt-24">
+
+        <div id="accordion-collapse" data-accordion="collapse" class="w-1/2">
+            <h2 id="accordion-collapse-heading-2">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium text-left text-white border-b rounded-t-xl"
+                    data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                    aria-controls="accordion-collapse-body-1">
+                    <span class="font-semibold text-white">How can I get the school?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5 5 1 1 5" />
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-collapse-body-1" class="hidden text-white"
+                aria-labelledby="accordion-collapse-heading-2">
+                <div class="p-5 border border-primaryBG dark:border-primaryBG rounded-b-xl border-b-4">
+                    <p class="mb-2 text-balck dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Natus amet accusamus nemo optio. Magnam incidunt ullam, odit ipsam minus mollitia.
+                    </p>
+                </div>
+            </div>
+
+
+            <h2 id="accordion-collapse-heading-2">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium text-left text-white border-b rounded-t-xl"
+                    data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                    aria-controls="accordion-collapse-body-1">
+                    <span class="font-semibold text-white">How can I get the school?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5 5 1 1 5" />
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-collapse-body-1" class="hidden text-white"
+                aria-labelledby="accordion-collapse-heading-2">
+                <div class="p-5 border border-primaryBG dark:border-primaryBG rounded-b-xl border-b-4">
+                    <p class="mb-2 text-balck dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Natus amet accusamus nemo optio. Magnam incidunt ullam, odit ipsam minus mollitia.
+                    </p>
+                </div>
+            </div>
+
+
+            <h2 id="accordion-collapse-heading-2">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium text-left text-white border-b rounded-t-xl"
+                    data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                    aria-controls="accordion-collapse-body-1">
+                    <span class="font-semibold text-white">How can I get the school?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5 5 1 1 5" />
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-collapse-body-1" class="hidden text-white"
+                aria-labelledby="accordion-collapse-heading-2">
+                <div class="p-5 border border-primaryBG dark:border-primaryBG rounded-b-xl border-b-4">
+                    <p class="mb-2 text-balck dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Natus amet accusamus nemo optio. Magnam incidunt ullam, odit ipsam minus mollitia.
+                    </p>
+                </div>
+            </div>
+
+
+
+            <h2 id="accordion-collapse-heading-2">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium text-left text-white border-b rounded-t-xl"
+                    data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                    aria-controls="accordion-collapse-body-1">
+                    <span class="font-semibold text-white">How can I get the school?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5 5 1 1 5" />
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-collapse-body-1" class="hidden text-white"
+                aria-labelledby="accordion-collapse-heading-2">
+                <div class="p-5 border border-primaryBG dark:border-primaryBG rounded-b-xl border-b-4">
+                    <p class="mb-2 text-balck dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Natus amet accusamus nemo optio. Magnam incidunt ullam, odit ipsam minus mollitia.
+                    </p>
+                </div>
+            </div>
+
+
+            <h2 id="accordion-collapse-heading-2">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium text-left text-white border-b rounded-t-xl"
+                    data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                    aria-controls="accordion-collapse-body-1">
+                    <span class="font-semibold text-white">How can I get the school?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5 5 1 1 5" />
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-collapse-body-1" class="hidden text-white"
+                aria-labelledby="accordion-collapse-heading-2">
+                <div class="p-5 border border-primaryBG dark:border-primaryBG rounded-b-xl border-b-4">
+                    <p class="mb-2 text-balck dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Natus amet accusamus nemo optio. Magnam incidunt ullam, odit ipsam minus mollitia.
+                    </p>
+                </div>
+            </div>
+
+
+            <h2 id="accordion-collapse-heading-2">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium text-left text-white border-b rounded-t-xl"
+                    data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                    aria-controls="accordion-collapse-body-1">
+                    <span class="font-semibold text-white">How can I get the school?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5 5 1 1 5" />
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-collapse-body-1" class="hidden text-white"
+                aria-labelledby="accordion-collapse-heading-2">
+                <div class="p-5 border border-primaryBG dark:border-primaryBG rounded-b-xl border-b-4">
+                    <p class="mb-2 text-balck dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Natus amet accusamus nemo optio. Magnam incidunt ullam, odit ipsam minus mollitia.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w-1/2">
+            <div>
+                <img src="./Images/martial.png" class="w-full" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- footer---------------------- -->
+
+    <div class="text-white text-center  mt-24">
+        <img src="./Images/logo (1).png" class="w-64 m-auto" alt="">
+        <p class="logotext text-xl ">FULL CIRCLE MARTIAL ART OF READING</p>
+    </div>
+    <div class="h-footer bg-primaryBG mt-12">
+        <div
+            class="w-full absolute bg-primaryBG flex justify-evenly items-center m-auto text-center text-black font-semibold mt-24">
+            <div class=" flex justify-between items-center gap-7">
+                <i class="fa-solid fa-calendar-days text-3xl"></i>
+                <div class="text-xl">
+                    <p>6pm-8pm Mondays and Wednesdays</p>
+                    <p>12:30pm-1:30pm Saturdays</p>
+                </div>
+            </div>
+            <button
+                class="bg-black text-white p-2 pr-7 pl-7 rounded-xl text-black font-semibold mt-8 hover:bg-white hover:text-black gap-5"><i
+                    class="fa-sharp fa-solid fa-phone mr-3"></i>Contact us</button>
+            <div class=" flex justify-between items-center gap-7">
+                <i class="fa-solid fa-location-dot text-3xl"></i>
+                <div class="text-xl">
+                    <p>102 Cleveland Ave, Reading, PA 19605</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
