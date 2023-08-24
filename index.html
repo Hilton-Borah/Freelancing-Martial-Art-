@@ -8,22 +8,12 @@
     <script src="https://unpkg.com/flowbite@1.4.4/dist/flowbite.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://kit.fontawesome.com/e04320a517.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Labrada&family=Merriweather&family=Open+Sans&display=swap"
-        rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Labrada&family=Merriweather&family=Open+Sans&family=Roboto+Mono:wght@200&display=swap"
-        rel="stylesheet">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Labrada&family=Merriweather&family=Open+Sans&family=Phudu:wght@300&family=Roboto+Mono:wght@200&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter&family=Inconsolata:wght@500&family=Labrada&family=Lato:wght@300&family=Merriweather&family=Open+Sans&family=Phudu:wght@300&family=Roboto+Mono:wght@200&family=Source+Code+Pro&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter&family=Inconsolata:wght@500&family=Labrada&family=Lato:wght@300&family=Merriweather&family=Open+Sans&family=Oswald:wght@300;400&family=Phudu:wght@300&family=Roboto+Mono:wght@200&family=Source+Code+Pro&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -59,7 +49,7 @@
 <style>
     /* CSS for NavBar */
     body {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Inconsolata', monospace;
     }
 
     .bodyBlack {
@@ -151,9 +141,14 @@
     }
 
     .logotext {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Oswald', sans-serif;
         color: #cbb26a;
         margin-top: -30px;
+    }
+
+    .laura{
+        background-image: url("./Images/girl.jpg");
+        position: relative;
     }
 </style>
 
@@ -167,7 +162,7 @@
             <div class="flex justify-between items-center h-8 mt-3">
 
                 <img src="./Images/logo (1).png" class="w-48" alt="Flowbite Logo" />
-                <p class="logotext text-sm ml-minus">FULL CIRCLE MARTIAL ART OF READING</p>
+                <p class="logotext text-sm ml-minus mt=[5px]">FULL CIRCLE MARTIAL ART OF READING</p>
 
             </div>
             <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
@@ -209,7 +204,8 @@
                     <li id="theme">
                         <a href="#"
                             class="block py-2 pl-3 pr-4 text-primaryBG bg-text-primaryBG rounded md:bg-transparent md:text-primaryBG md:p-0 dark:text-white md:dark:text-primaryBG"
-                            aria-current="page">Theme</a>
+                            aria-current="page"><i id="i" class="fa-solid fa-sun text-2xl"></i></a>
+                            <!-- <i class="fa-solid fa-moon"></i> -->
                     </li>
                 </ul>
             </div>
@@ -226,7 +222,7 @@
     <section class="background-section">
         <div class="overlay-content w-3/4 mt-12">
             <div class="p-10 text-center">
-                <p class="text-3xl font-bold mb-5 text-primaryBG">FULL CIRCLE MARTIAL ART OF READING</p>
+                <p class="text-3xl font-bold mb-5">FULL CIRCLE <span class="text-primaryBG">MARTIAL ART</span> OF READING</p>
                 <p class="text-xl">Discover your inner strength with our martial art school. Learn self-defense, build
                     confidence, and achieve balance in a supportive community. Unleash your potential with expert
                     guidance and exciting classes. Join us to embark on a transformative journey today!</p>
@@ -263,10 +259,18 @@
     </div>
 
 
+    <div id="youtube" class="w-3/4 m-auto mt-48 flex justify-between items-center">
+        <div class="w-1/2">
+            <p class="text-3xl mb-5 font-semibold"><span class="text-primaryBG">Watch the video</span> to get some clarity</p>
+            <p class="text-xl">Transform yourself through the artistry of martial movements. Our school is your canvas, where dedication and growth paint the masterpiece of your journey."</p>
+        </div>
+        <iframe width="40%" height="300px" class="rounded-xl" src="https://www.youtube.com/embed/e64AtWekQVo?si=za7DIUt4W6aAXfUt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
     <!-- second body ------------------------- -->
 
 
-    <div id="secondpart" class="w-secondpartwidth mt-48 flex justify-between items-center m-auto p-10 gap-24">
+    <div id="secondpart" class="w-secondpartwidth mt-24 flex justify-between items-center m-auto p-10 gap-24">
         <img class="w-imageweight h-imageheight rounded-xl"
             src="http://www.moyerskarate.com/images/moyers/master_moyer_wall.jpg" alt="">
         <div>
@@ -406,36 +410,36 @@
     </div>
 
     <div class="w-10/12 flex justify-between items-center m-auto text-white gap-5 mt-24">
-        <div class="w-3/12 pricebox text-center middleWhite leading-loose">
+        <div id="skillbox1" class="w-3/12 pricebox text-center middleWhite leading-loose textBlack rounded-xl">
             <img class="rounded-t-xl w-full" src="http://www.moyerskarate.com/images/moyers/mm_self-defense.jpg" alt="">
             <div class="p-5">
                 <p class="font-bold text-xl mb-3 text-primaryBG">SELF-DEFENCE</p>
-                <hr class="w-1/4 m-auto mb-3 border-primaryBG">
+                <hr class="w-3/4 m-auto mb-3 border-primaryBG border-2">
                 <p>Physical and mental preparedness for those unprovoked and unpredicatable altercations.</p>
             </div>
         </div>
-        <div class="w-3/12 pricebox text-center middleWhite rounded-xl leading-loose">
+        <div id="skillbox2" class="w-3/12 pricebox text-center middleWhite rounded-xl leading-loose textBlack">
             <img class="rounded-t-xl w-full" src="http://www.moyerskarate.com/images/moyers/mm_weapons.jpg" alt="">
             <div class="p-5">
                 <p class="font-bold text-xl mb-3 text-primaryBG">TRADITIONAL WEAPON</p>
-                <hr class="w-1/4 m-auto mb-3 border-primaryBG">
+                <hr class="w-3/4 m-auto mb-3 border-primaryBG border-2">
                 <p>Experience some of the culture and history of martial arts through weapons training.</p>
             </div>
         </div>
-        <div class="w-3/12 pricebox text-center middleWhite leading-loose">
+        <div id="skillbox3" class="w-3/12 pricebox text-center middleWhite leading-loose textBlack rounded-xl">
             <img class="rounded-t-xl w-full" src="http://www.moyerskarate.com/images/moyers/mm_kata.jpg" alt="">
             <div class="p-5">
                 <p class="font-bold text-xl mb-3 text-primaryBG">KATA or FORMS</p>
-                <hr class="w-1/4 m-auto mb-3 border-primaryBG">
+                <hr class="w-3/4 m-auto mb-3 border-primaryBG border-2">
                 <p>PKatas/Forms are the training tools needed to improve your physical martial arts skills.</p>
             </div>
         </div>
-        <div class="w-3/12 pricebox text-center middleWhite leading-loose">
+        <div id="skillbox4" class="w-3/12 pricebox text-center middleWhite leading-loose textBlack rounded-xl">
             <img class="rounded-t-xl w-full" src="http://www.moyerskarate.com/images/moyers/mm_fight.jpg" alt="">
             <div class="p-5">
                 <p class="font-bold text-xl mb-3 text-primaryBG">FIGHTING</p>
-                <hr class="w-1/4 m-auto mb-3 border-primaryBG">
-                <p>Training to fight allows for you to build mental confidence if the need to defend yourself arises.
+                <hr class="w-3/4 m-auto mb-3 border-primaryBG border-2">
+                <p>Training to fight allows for you to build mental confidence if the need to defend yourself.
                 </p>
             </div>
         </div>
@@ -452,7 +456,7 @@
 
     <!-- Accortion FAQ------------------------ -->
 
-    <div class="m-auto text-white text-center mt-24 leading-loose bg-backgroundgray p-10">
+    <div id="faqpart" class="m-auto textBlack text-center mt-24 leading-loose middleWhite p-10">
         <p class="text-3xl font-bold">LET'S KNOW</p>
         <p class="text-2xl font-semibold mt-3"><span class="text-primaryBG">FREQUENTY ASK QUESTION</span></p>
         <hr class="w-1/4 m-auto mt-5 mb-1 border-2 border-primaryBG">
@@ -461,12 +465,13 @@
     <div class="w-10/12 flex justify-between items-center m-auto gap-10 mt-24">
 
         <div id="accordion-collapse" data-accordion="collapse" class="w-1/2">
+            
             <h2 id="accordion-collapse-heading-2">
                 <button type="button"
-                    class="flex items-center justify-between w-full p-5 font-medium text-left text-white border-b rounded-t-xl"
+                    class="flex items-center justify-between w-full p-5 font-medium text-left border-b rounded-t-xl textBlack middleWhite"
                     data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
                     aria-controls="accordion-collapse-body-1">
-                    <span class="font-semibold text-white">How can I get the school?</span>
+                    <span class="font-semibold textBlack">How can I get the school?</span>
                     <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -477,7 +482,7 @@
             <div id="accordion-collapse-body-1" class="hidden text-white"
                 aria-labelledby="accordion-collapse-heading-2">
                 <div class="p-5 border border-primaryBG dark:border-primaryBG rounded-b-xl border-b-4">
-                    <p class="mb-2 text-balck dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p id="acordion" class="mb-2 textBlack">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Natus amet accusamus nemo optio. Magnam incidunt ullam, odit ipsam minus mollitia.
                     </p>
                 </div>
@@ -489,7 +494,7 @@
                     class="flex items-center justify-between w-full p-5 font-medium text-left text-white border-b rounded-t-xl"
                     data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
                     aria-controls="accordion-collapse-body-1">
-                    <span class="font-semibold text-white">How can I get the school?</span>
+                    <span class="font-semibold textBlack">How can I get the school?</span>
                     <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -500,7 +505,7 @@
             <div id="accordion-collapse-body-1" class="hidden text-white"
                 aria-labelledby="accordion-collapse-heading-2">
                 <div class="p-5 border border-primaryBG dark:border-primaryBG rounded-b-xl border-b-4">
-                    <p class="mb-2 text-balck dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p id="acordion2" class="mb-2 textBlack">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Natus amet accusamus nemo optio. Magnam incidunt ullam, odit ipsam minus mollitia.
                     </p>
                 </div>
@@ -512,7 +517,7 @@
                     class="flex items-center justify-between w-full p-5 font-medium text-left text-white border-b rounded-t-xl"
                     data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
                     aria-controls="accordion-collapse-body-1">
-                    <span class="font-semibold text-white">How can I get the school?</span>
+                    <span class="font-semibold textBlack">How can I get the school?</span>
                     <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -523,7 +528,7 @@
             <div id="accordion-collapse-body-1" class="hidden text-white"
                 aria-labelledby="accordion-collapse-heading-2">
                 <div class="p-5 border border-primaryBG dark:border-primaryBG rounded-b-xl border-b-4">
-                    <p class="mb-2 text-balck dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p id="acordion3" class="mb-2 textBlack">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Natus amet accusamus nemo optio. Magnam incidunt ullam, odit ipsam minus mollitia.
                     </p>
                 </div>
@@ -536,7 +541,7 @@
                     class="flex items-center justify-between w-full p-5 font-medium text-left text-white border-b rounded-t-xl"
                     data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
                     aria-controls="accordion-collapse-body-1">
-                    <span class="font-semibold text-white">How can I get the school?</span>
+                    <span class="font-semibold textBlack">How can I get the school?</span>
                     <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -547,7 +552,7 @@
             <div id="accordion-collapse-body-1" class="hidden text-white"
                 aria-labelledby="accordion-collapse-heading-2">
                 <div class="p-5 border border-primaryBG dark:border-primaryBG rounded-b-xl border-b-4">
-                    <p class="mb-2 text-balck dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p id="acordion4" class="mb-2 textBlack">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Natus amet accusamus nemo optio. Magnam incidunt ullam, odit ipsam minus mollitia.
                     </p>
                 </div>
@@ -559,7 +564,7 @@
                     class="flex items-center justify-between w-full p-5 font-medium text-left text-white border-b rounded-t-xl"
                     data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
                     aria-controls="accordion-collapse-body-1">
-                    <span class="font-semibold text-white">How can I get the school?</span>
+                    <span class="font-semibold textBlack">How can I get the school?</span>
                     <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -570,7 +575,7 @@
             <div id="accordion-collapse-body-1" class="hidden text-white"
                 aria-labelledby="accordion-collapse-heading-2">
                 <div class="p-5 border border-primaryBG dark:border-primaryBG rounded-b-xl border-b-4">
-                    <p class="mb-2 text-balck dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p id="acordion5" class="mb-2 textBlack">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Natus amet accusamus nemo optio. Magnam incidunt ullam, odit ipsam minus mollitia.
                     </p>
                 </div>
@@ -582,7 +587,7 @@
                     class="flex items-center justify-between w-full p-5 font-medium text-left text-white border-b rounded-t-xl"
                     data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
                     aria-controls="accordion-collapse-body-1">
-                    <span class="font-semibold text-white">How can I get the school?</span>
+                    <span class="font-semibold textBlack">How can I get the school?</span>
                     <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -593,7 +598,7 @@
             <div id="accordion-collapse-body-1" class="hidden text-white"
                 aria-labelledby="accordion-collapse-heading-2">
                 <div class="p-5 border border-primaryBG dark:border-primaryBG rounded-b-xl border-b-4">
-                    <p class="mb-2 text-balck dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p id="acordion6" class="mb-2 textBlack">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Natus amet accusamus nemo optio. Magnam incidunt ullam, odit ipsam minus mollitia.
                     </p>
                 </div>
